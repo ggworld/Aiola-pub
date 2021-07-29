@@ -7,7 +7,7 @@ import json
 import sys
 logging.getLogger().setLevel(logging.DEBUG)
 
-aws_path = 's3://aiola-374014573610-us-east-1-data/tier2/quotes/'
+aws_path = 's3://<>/tier2/quotes/'
 
 log_file = '/home/ec2-user/workspaces/g-test1/mylog/find.log'
 max_p = 20
@@ -44,7 +44,7 @@ if __name__ == '__main__':
            key_to_search = 20301571     
     try:
         if sys.argv[2]:
-            aws_path='s3://aiola-374014573610-us-east-1-data/tier2/bad/quotes/'
+            aws_path='s3://<>/tier2/bad/quotes/'
     except:
            key_to_search = 20301571     
         
